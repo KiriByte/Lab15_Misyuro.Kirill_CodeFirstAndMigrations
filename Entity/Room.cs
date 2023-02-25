@@ -5,6 +5,7 @@ public class Room
     public int Id { get; set; }
     public int Size { get; set; }
     public int Stars { get; set; }
+    public string Name { get; set; }
 
     public ICollection<Journal> Journals { get; set; } = new List<Journal>();
 }
