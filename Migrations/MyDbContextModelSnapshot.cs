@@ -125,7 +125,6 @@ namespace Lab15_Misyuro.Kirill_CodeFirstAndMigrations.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Size")
