@@ -19,10 +19,6 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        using (var db = new MyDbContext(_context)) 
-        {
-            
-        }
         return View();
     }
 
@@ -30,6 +26,8 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
